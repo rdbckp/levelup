@@ -1,0 +1,11 @@
+#!/bin/sh
+
+mv t toolchain.tar.gz
+tar -xzvf toolchain.tar.gz
+rm toolchain.tar.gz
+chmod +x -R toolchain
+sudo rm /etc/apt/sources.list.d/yarn.list
+sudo apt update && sudo apt upgrade -y
+sudo apt-get install -y build-essential bc gcc-aarch64-linux-gnu gcc-arm-linux-gnueabi libssl-dev libfl-dev curl git ftp lftp >
+clear
+
